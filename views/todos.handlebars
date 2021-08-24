@@ -1,0 +1,25 @@
+<header class="busca">
+<h1>Todos os contatos:</h1>
+</header>
+
+<br>
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Telefone</th>
+    <th>E-mail</th>
+  </tr>
+{{#each contatos}}
+<tr>
+  <td> {{dataValues.nome}}</td>
+  <td>{{dataValues.telefone}}</td>
+  <td>{{dataValues.email}}</td>
+  <td><a href='/editar/{{dataValues.id}}'><img src="img/editar_icon.png" alt="Editar" width="30px"></a></td>
+  <td><a href='/deletar/{{dataValues.id}}'><img src="img/deletar_icon.png" alt="Deletar" width="30px"></a></td>
+</tr>
+{{/each}}
+</table>
+<div class="voltar">
+  <br><br>
+  <a href="/"><button>Voltar</button></a>
+</div>

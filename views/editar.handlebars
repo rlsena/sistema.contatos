@@ -1,0 +1,30 @@
+<header style = "width:520px;color: white;padding: 2px;background-color: blue;text-align: center;font-size: 14px;">
+  <h1>Editar Contato</h1>
+  <p>*** Altere os campos desejados e clique em enviar ***</p>
+</header>
+<br>
+
+
+<form style="border: 2px solid black;width: 500px;padding: 10px;" action="/update" method="POST">
+
+  {{#contato}}
+
+  <input type="hidden" name="id" value="{{dataValues.id}}">
+  <p>Nome:</p>
+  <input type="text" name="nome" value="{{dataValues.nome}}">
+  <p>Telefone:</p>
+  <input type="text" name="telefone" value="{{dataValues.telefone}}">
+  <p>e-mail:</p>
+  <input type="text" name="email" value="{{dataValues.email}}">
+
+  {{/contato}}
+
+  <button style="background-color: red;padding: 5px;border-radius: 10px;border-color: white;color: white;border" type="submit">Atualizar</button>
+
+  <br><br>
+</form>
+
+<div style="text-align: center;width: 500px;">
+  <br><br>
+  <a href="/"><button style="background-color: red;padding: 5px;border-radius: 10px;border-color: white;color: white;border">Voltar</button></a>
+</div>

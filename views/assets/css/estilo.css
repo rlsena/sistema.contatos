@@ -1,0 +1,71 @@
+
+
+.index{
+  color: white;
+
+}
+
+header{
+ background-color: blue;
+ text-align: center;
+ padding: 10px;
+ width: 270px;
+ font-size: 14px;
+
+}
+
+.busca{
+  width:500px;
+  color: white;
+  padding: 2px;
+}
+
+button{
+
+  background-color: red;
+  padding: 5px;
+  border-radius: 10px;
+  border-color: white;
+  color: white;
+  border
+
+}
+
+.buttons {
+  text-align: center;
+  width: 270px;
+
+}
+
+table, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+
+}
+
+table {
+
+  width: 500px;
+}
+
+td{
+  padding: 5px;
+}
+
+.headercad{
+  width:520px;
+  color: white;
+  padding: 2px;
+}
+
+.formcad{
+
+  border: 2px solid black;
+  width: 500px;
+  padding: 10px;
+}
+
+.voltar{
+  text-align: center;
+  width: 500px;
+}
